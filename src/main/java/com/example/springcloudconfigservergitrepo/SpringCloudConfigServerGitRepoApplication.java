@@ -8,8 +8,12 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
 @EnableConfigServer
-public class SpringCloudConfigServerGitRepoApplication  {
+public class SpringCloudConfigServerGitRepoApplication extends SpringBootServletInitializer  {
 
+	@Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(HelloWorldApplication.class);
+    }
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudConfigServerGitRepoApplication.class, args);
 	}
