@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>springApp</artifactId>
-	<version></version>
+	<version>1.0</version>
 	 <packaging>war</packaging>
 	<name>spring-cloud-config-server-git-repo</name>
 	<description>Demo project for Spring Boot</description>
