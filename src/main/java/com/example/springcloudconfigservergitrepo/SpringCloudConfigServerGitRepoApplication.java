@@ -12,7 +12,7 @@ public class SpringCloudConfigServerGitRepoApplication extends SpringBootServlet
 
 	@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(HelloWorldApplication.class);
+        return application.sources(SpringCloudConfigServerGitRepoApplication.class);
     }
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudConfigServerGitRepoApplication.class, args);
