@@ -9,8 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>spring-cloud-config-server-git-repo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>springApp</artifactId>
+	<version></version>
+	 <packaging>war</packaging>
 	<name>spring-cloud-config-server-git-repo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
