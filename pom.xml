@@ -14,11 +14,27 @@
 	 <packaging>war</packaging>
 	<name>spring-cloud-config-server-git-repo</name>
 	<description>Demo project for Spring Boot</description>
+	
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
+		<start-class>com.example.springcloudconfigservergitrepo.SpringCloudConfigServerGitRepoApplication</start-class>
 	</properties>
+
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+			</dependency>
+			
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
@@ -30,11 +46,7 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
- <groupId>org.springframework.boot</groupId>
- <artifactId>spring-boot-starter-tomcat</artifactId>
- <scope>provided</scope> 
-</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
