@@ -17,7 +17,7 @@ public class SpringCloudConfigServerGitRepoApplication {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "Application Deployed by rejina";
+		return "Application Deployed by rejina on wednesday";
 	}
 
 	public static void main(String[] args) {
